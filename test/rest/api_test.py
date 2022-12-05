@@ -9,6 +9,7 @@ BASE_URL = "http://localhost:5000"
 BASE_URL_MOCK = "http://localhost:9090"
 DEFAULT_TIMEOUT = 2  # in secs
 
+
 @pytest.mark.api
 class TestApi(unittest.TestCase):
     def setUp(self):
@@ -34,6 +35,7 @@ class TestApi(unittest.TestCase):
         self.assertEqual(
             response.read().decode(), "8", "ERROR SQRT"
         )
+
 
 if __name__ == "__main__":  # pragma: no cover
     unittest.main()
