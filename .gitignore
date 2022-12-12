@@ -2,3 +2,4 @@ result*.xml
 __pycache__
 .pytest_cache
 dist/
+__files/
